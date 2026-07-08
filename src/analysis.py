@@ -114,3 +114,55 @@ china_rice = china_rice.sort_values(
 china_rice.to_csv(
     "output/reports/china_rice_by_year.csv"
 )
+
+# ENTITY INVESTIGATION
+
+countries = production["Country"].unique()
+
+# for item in sorted(countries):
+#    print(item)
+
+# ------------------------------
+# COUNTRY FILTER
+# ------------------------------
+
+aggregate_entities = [
+    "World",
+    "Africa",
+    "Asia",
+    "Europe",
+    "North America",
+    "South America",
+    "Oceania",
+    "Melanesia",
+    "High-income countries",
+    "Upper-middle-income countries",
+    "Lower-middle-income countries",
+    "Low-income countries",
+    "European Union (27)"
+]
+
+countries_only = production[
+    ~production["Country"].str.contains(
+        r"\(FAO\)",
+        regex=True
+    )
+]
+
+countries_only = countries_only[
+    ~countries_only["Country"].isin(
+        aggregate_entities
+    )
+]
+
+    
+maize_country = (
+    countries_only.groupby("Country")
+    ["Maize"]
+    .sum()
+    .sort_values(ascending=False)
+)
+
+maize_country.to_csv(
+    "output/reports/top_maize_producers_countries_only.csv"
+)
