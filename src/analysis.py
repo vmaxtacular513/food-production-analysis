@@ -205,4 +205,22 @@ wheat_large = (
     )
 )
 
-print(wheat_large.head(20))
+china = countries_only[
+    countries_only["Country"] == "China"
+]
+
+south_africa = countries_only[
+    countries_only["Country"] == "South Africa"
+]
+
+for country in [
+    "China",
+    "India",
+    "Vietnam",
+    "Thailand"
+]:
+    total = countries_only[
+        countries_only["Country"] == country
+    ]["Rice"].sum()
+
+    print(country, total)

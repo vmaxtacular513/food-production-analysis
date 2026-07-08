@@ -54,3 +54,14 @@ Saint Lucia appeared as the largest wheat producer in the dataset, with values e
 Additional investigation revealed a structural break beginning around 2012, when reported wheat production dropped from hundreds of millions of tonnes to tens of thousands.
 
 These patterns suggest potential data quality, methodology, or unit inconsistancies that should be validated before drawing conclusions about wheat production rankings.
+
+## Data Validation Findings
+
+### Reliable
+- Maize rankings appear plausible after filtering aggregate entities.
+
+### Under Review
+- Wheat rankings produce implausible country results.
+- Rice rankings produce unexpected country results.
+
+Further validation of units, methodology, and source definitions is required before drawing conclusions from wheat and rice analyses.
