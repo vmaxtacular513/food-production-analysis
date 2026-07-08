@@ -50,3 +50,11 @@ The goal is to better understand long-term agricultural production trends and bu
 - More production trend visualizations
 - Food price analysis
 - Production versus food price comparisons
+
+## Conclusion
+
+This project began as an analysis of global food production trends but evolved into a data validation exercise.
+
+Initial rankings revealed that the dataset contained regional and economic aggregates that distorted country-level analysis. After filtering these entities, maize production rankings appeared reasonable, while several other commodity fields produced results that required further investigation.
+
+The project reinforced an important analytical lesson: meaningful insights depend on data quality, and unexpected results should be investigated rather than accepted at face value.

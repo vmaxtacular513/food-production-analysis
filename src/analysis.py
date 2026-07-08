@@ -219,18 +219,32 @@ for country in [
     "Vietnam",
     "Thailand"
 ]:
-    total = countries_only[
+    country_data = countries_only[
         countries_only["Country"] == country
-    ]["Rice"].sum()
+    ]
 
-    print(country, total)
+soybeans_country = (
+    countries_only.groupby("Country")["Soybeans"]
+    .sum()
+    .sort_values(ascending=False)
+)
 
-china = countries_only[
-    countries_only["Country"] == "China"
+# print(soybeans_country.head(20))
+
+crops = [
+    "Maize",
+    "Wheat",
+    "Rice",
+    "Soybeans",
+    "Potatoes"
 ]
 
-print(
-    china[
-        ["Year", "Rice"]
-        ]
-)
+for crop in crops:
+    ranking = (
+        countries_only.groupby("Country")[crop]
+        .sum()
+        .sort_values(ascending=False)
+    )
+
+    print("\n", crop)
+    print(ranking.head(10))
