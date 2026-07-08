@@ -50,3 +50,13 @@ Aggregate regions distort country rankings and can lead to misleading conclusion
 Initial rankings were dominated by aggregate entities such as World, Asia, and North America.
 
 Filtering out FAO regions and economic groups are more meaningful country-level analysis. 
+
+These entities distorted country rankings.
+
+### Action Taken
+
+Created a filtered dataset for country-level maize production rankings. 
+
+### Result
+
+Country rankings now better reflect actual national production levels.

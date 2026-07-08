@@ -166,3 +166,43 @@ maize_country = (
 maize_country.to_csv(
     "output/reports/top_maize_producers_countries_only.csv"
 )
+
+rice_country = (
+    countries_only.groupby("Country")
+    ["Rice"]
+    .sum()
+    .sort_values(ascending=False)
+)
+
+rice_country.to_csv(
+    "output/reports/top_rice_producers_countries_only.csv"
+)
+
+wheat_country = (
+    countries_only.groupby("Country")
+    ["Wheat"]
+    .sum()
+    .sort_values(ascending=False)
+)
+
+wheat_country.to_csv(
+    "output/reports/top_wheat_producers_countries_only.csv"
+)
+
+saint_lucia = countries_only[
+    countries_only["Country"] == "Saint Lucia"
+]
+
+production["Wheat"].describe()
+
+wheat_large = (
+    countries_only[
+        ["Country", "Year", "Wheat"]
+    ]
+    .sort_values(
+        by="Wheat",
+        ascending=False
+    )
+)
+
+print(wheat_large.head(20))
