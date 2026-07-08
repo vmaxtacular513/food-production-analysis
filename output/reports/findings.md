@@ -65,3 +65,16 @@ These patterns suggest potential data quality, methodology, or unit inconsistanc
 - Rice rankings produce unexpected country results.
 
 Further validation of units, methodology, and source definitions is required before drawing conclusions from wheat and rice analyses.
+
+## Commodity Validation
+
+### Maize
+After removing aggregate entities, maize ranking produced plausible results.
+
+### Wheat
+Country rankings appear heavily influenced by anomalous values, particularly in Saint Lucia.
+
+### Rice
+Country rankings produced unexpected results. China's reported rice production values are substantially lower than several countries appearing at the top of the rankings and appear to exist on a different scale thank other observations.
+
+Further validation of source methodology, units, and data definitions is recommended before using rice rankings for analysis.

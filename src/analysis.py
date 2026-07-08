@@ -224,3 +224,13 @@ for country in [
     ]["Rice"].sum()
 
     print(country, total)
+
+china = countries_only[
+    countries_only["Country"] == "China"
+]
+
+print(
+    china[
+        ["Year", "Rice"]
+        ]
+)
