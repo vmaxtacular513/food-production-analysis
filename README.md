@@ -1,29 +1,52 @@
 # Global Food Production Analysis
 
+## Overview
 
-## Goal
+This project explores food production data from 1961-2021 using Python, Pandas, and Matplotlib.
 
-Explore global food production data from 1961-2021 using Python.
+The goal is to better understand long-term agricultural production trends and build practical data analysis skills.
 
-## Tools
+## Tools Used
 
 - Python
 - Pandas
 - Matplotlib
+- Git
+- GitHub
 
-## Questions
+## Analyses Completed
 
-- Which countries produce the most maize?
-- How has production changed over time?
-- How do China and the United States compare?
+### Production Rankings
 
-## Results
+- Top maize producers
+- Top wheat producers
+- Top rice producers
 
+### Country Trends
 
-## Files
+- United States maize production by year
+- United States wheat production by year
+- United States rice production by year
 
-### Reports
+- China maize production by year
+- China wheat production by year
+- China rice production by year
 
-### Charts
+## Visualizations
 
-- us_vs_china_maize_production.png
+- US Maize Production Over Time
+- US vs China Maize Production
+
+## Key Observations
+
+- The dataset covers production from 1961-2021.
+- The data includes both countries and regional aggregates.
+- No missing values were found during initial exploration.
+- Wheat production contains several unusual spikes that may require additional investigation.
+
+## Future Work
+
+- Additional country comparisons
+- More production trend visualizations
+- Food price analysis
+- Production versus food price comparisons
